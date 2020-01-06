@@ -1,0 +1,82 @@
+ /* Contact */
+ 
+ .google-map {
+     background-color: #343434;
+     height: 500px;
+ }
+ 
+ .google-map h2 {
+     font-weight: 100;
+     color: #ededed;
+     text-align: center;
+ }
+ 
+ .contact-us {
+     text-align: center;
+     font-weight: 100;
+     padding: 2rem;
+ }
+ 
+ .contact-us h2 {
+     font-weight: 100;
+ }
+ 
+ .contact-form {
+     background-color: #fafafa;
+ }
+ 
+ label {
+     color: #212121;
+     font-weight: 100;
+ }
+ 
+ input[type=text],
+ select,
+ textarea {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+     color: #343434;
+     font-size: 1em;
+ }
+ 
+ input[type=submit] {
+     background-color: #fadb7d;
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     cursor: pointer;
+ }
+ 
+ input[type=submit]:hover {
+     background-color: #000000;
+     transition: 300ms;
+ }
+ /* GOOGLE MAP */
+ 
+ #map {
+     height: 100%;
+     width: 102.5%;
+ }
+ /* INFO */
+ 
+ #info {
+     background-color: #343434;
+     color: #ededed;
+     font-weight: 100;
+     padding-top: 1rem;
+ }
+ 
+ #info h4 {
+     font-weight: 100;
+     text-align: center;
+     padding-bottom: 1rem;
+ }
+ 
+ .info-one li {
+     list-style-type: none;
+     padding: .2rem;
+ }
