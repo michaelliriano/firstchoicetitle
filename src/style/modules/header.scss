@@ -1,271 +1,292 @@
 #header {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
+.column_one {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+}
 .top_bar .column_one {
-    background-color: #343434;
-    padding-top: .8rem;
-    height: 50%;
-    width: 100%;
+  background-color: #343434;
+
+  height: 50%;
+  width: 100%;
 }
 
 .fab:hover {
-    color: #fadb7d;
-    transition: 700ms;
+  color: #fadb7d;
+  transition: 700ms;
 }
 
 .column_one p {
-    color: rgb(233, 233, 233);
-    display: inline-block;
-    font-weight: 100;
-    letter-spacing: .5px;
-    font-size: .9rem;
+  color: rgb(233, 233, 233);
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
 }
 
 .column_one i {
-    color: #aeaeae;
-    float: right;
-    align-content: center;
-    padding-left: 1rem;
+  color: #aeaeae;
+  float: right;
+  align-content: center;
+  padding-left: 1rem;
 }
 
-@media(max-width: 500px) {
-    .column_one p {
-        color: rgb(233, 233, 233);
-        display: inline-block;
-        font-weight: 100;
-        font-size: .8rem;
-    }
-    .column_one i {
-        display: none;
-    }
+@media (max-width: 500px) {
+  .column_one p {
+    color: rgb(233, 233, 233);
+    display: inline-block;
+    font-weight: 100;
+    font-size: 0.8rem;
+  }
+  .column_one i {
+    display: none;
+  }
 }
-
 
 /*  Navbar */
 
+.navbar {
+  padding: 0;
+}
+
 .navbar-nav {
-    margin: 0;
+  margin: 0;
 }
 
 .navbar-toggler {
-    background-color: #343434 !important;
+  background-color: #343434 !important;
 }
 
 .navbar-nav a {
-    padding: 2.5rem !important;
-    color: rgb(26, 26, 26) !important;
+  padding: 2.5rem !important;
+  color: rgb(26, 26, 26) !important;
 }
 
 .navbar-nav a:hover {
-    background-color: #fadb7d;
+  background-color: #fadb7d;
 }
 
 @media (max-width: 768px) {
-    .navbar-nav a {
-        padding: 1rem !important;
-    }
-    .navbar-nav a:hover {
-        background-color: #fadb7d !important;
-        color: #212121 !important;
-        transition: 300ms;
-    }
+  .navbar-nav a {
+    padding: 1rem !important;
+  }
+  .navbar-nav a:hover {
+    background-color: #fadb7d !important;
+    color: #212121 !important;
+    transition: 300ms;
+  }
 }
-
+.image-spacing {
+  padding-left: 20px;
+}
 
 /* Hero Image */
 
 .bgimg {
+  position: relative;
+  color: #eeeeee;
+  font-weight: 100;
+  text-align: center;
+  background-image: url('/dist/images/hero-img.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  display: flex;
+}
+
+.bgimg img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+}
+
+@media (max-width: 700px) {
+  .bgimg {
     position: relative;
     color: #eeeeee;
     font-weight: 100;
     text-align: center;
-    background-image: url('/dist/images/hero-img.webp');
+    background-image: url('/dist/images/hero-small.webp');
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
-    display: flex;
-}
-
-.bgimg img {
-    width: 100%;
-    height: auto;
-    position: relative;
-    display: inline-block;
-}
-
-@media(max-width: 700px) {
-    .bgimg {
-        position: relative;
-        color: #eeeeee;
-        font-weight: 100;
-        text-align: center;
-        background-image: url('/dist/images/hero-small.webp');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 700px;
-    }
-}
-
-@media(max-width: 500px) {
-    .bgimg {
-        position: relative;
-        color: #eeeeee;
-        font-weight: 100;
-        text-align: center;
-        background-image: url('/dist/images/hero-small.webp');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 500px;
-    }
-}
-
-.wrapper {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.wrapper h1 {
-    font-size: 3em;
-    position: relative;
-}
-
-.wrapper p {
-    font-size: 1.1rem;
-    position: relative;
-}
-
-@media (max-width: 930px) {
-    .wrapper p {
-        font-size: 1rem;
-        position: relative;
-    }
-    .wrapper h1 {
-        font-size: 2.5em;
-        position: relative;
-    }
-}
-
-@media (max-width: 785px) {
-    .wrapper p {
-        font-size: 1.2rem;
-        position: relative;
-    }
-    .wrapper h1 {
-        font-size: 3.5em;
-        position: relative;
-    }
+  }
 }
 
 @media (max-width: 500px) {
-    .wrapper p {
-        display: none;
-    }
-    .wrapper h1 {
-        font-size: 2.5em;
-        position: relative;
-    }
+  .bgimg {
+    position: relative;
+    color: #eeeeee;
+    font-weight: 100;
+    text-align: center;
+    background-image: url('/dist/images/hero-small.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+}
+@media (max-width: 300px) {
+  .bgimg {
+    position: relative;
+    color: #eeeeee;
+    font-weight: 100;
+    text-align: center;
+    background-image: url('/dist/images/hero-small.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+}
+
+.wrapper {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.wrapper h1 {
+  font-size: 3em;
+  position: relative;
+}
+
+.wrapper p {
+  font-size: 1.1rem;
+  position: relative;
+}
+
+@media (max-width: 930px) {
+  .wrapper p {
+    font-size: 1rem;
+    position: relative;
+  }
+  .wrapper h1 {
+    font-size: 2.5em;
+    position: relative;
+  }
+}
+
+@media (max-width: 785px) {
+  .wrapper p {
+    font-size: 1.2rem;
+    position: relative;
+  }
+  .wrapper h1 {
+    font-size: 3.5em;
+    position: relative;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper p {
+    display: none;
+  }
+  .wrapper h1 {
+    font-size: 2.5em;
+    position: relative;
+  }
 }
 
 .about-button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 30px 15px 30px;
+  list-style: none;
+}
+
+@media (max-width: 1260px) {
+  .about-button {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0px 30px 15px 30px;
     list-style: none;
-}
-
-@media (max-width: 1260px) {
-    .about-button {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 0px 30px 15px 30px;
-        list-style: none;
-    }
-    .about-button button {
-        position: relative;
-        padding: .4rem;
-        background-color: #ffffff00;
-        color: #f0f0f0;
-    }
+  }
+  .about-button button {
+    position: relative;
+    padding: 0.4rem;
+    background-color: #ffffff00;
+    color: #f0f0f0;
+  }
 }
 
 @media (max-width: 900px) {
-    .about-button {
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 0px 30px 15px 30px;
-        list-style: none;
-    }
-    .about-button button {
-        position: relative;
-        background-color: #ffffff00;
-        color: #f0f0f0;
-    }
+  .about-button {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px 30px 15px 30px;
+    list-style: none;
+  }
+  .about-button button {
+    position: relative;
+    background-color: #ffffff00;
+    color: #f0f0f0;
+  }
 }
 
 @media (max-width: 785px) {
-    .about-button {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 0px 30px 15px 30px;
-        list-style: none;
-    }
-    .about-button button {
-        position: relative;
-        background-color: #ffffff00;
-        color: #f0f0f0;
-    }
+  .about-button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px 30px 15px 30px;
+    list-style: none;
+  }
+  .about-button button {
+    position: relative;
+    background-color: #ffffff00;
+    color: #f0f0f0;
+  }
 }
 
 @media (max-width: 550px) {
-    .about-button {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 0px 30px 15px 30px;
-        list-style: none;
-    }
-    .about-button button {
-        position: relative;
-        background-color: #ffffff00;
-        color: #f0f0f0;
-    }
+  .about-button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px 30px 15px 30px;
+    list-style: none;
+  }
+  .about-button button {
+    position: relative;
+    background-color: #ffffff00;
+    color: #f0f0f0;
+  }
 }
 
 .about-button button {
-    position: relative;
-    padding: 1rem;
-    background-color: #ffffff00;
-    color: #f0f0f0;
+  position: relative;
+  padding: 1rem;
+  background-color: #ffffff00;
+  color: #f0f0f0;
 }
 
 .about-button button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .learn-more {
-    width: 100%;
-    height: 0%;
+  width: 100%;
+  height: 0%;
 }
 
 .wrapper h1 {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 .wrapper strong {
-    color: #fadb7d;
-    font-weight: 100;
+  color: #fadb7d;
+  font-weight: 100;
 }
